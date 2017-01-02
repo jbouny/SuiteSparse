@@ -90,7 +90,7 @@ GLOBAL Int UMF_analyze
     /* ==== initializations ================================================= */
     /* ====================================================================== */
 
-#pragma ivdep
+SUITESPARSE_VECTORIZE
     for (j = 0 ; j < n_col ; j++)
     {
 	Link [j] = EMPTY ;
